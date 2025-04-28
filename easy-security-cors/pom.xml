@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <groupId>dev.easysecurity</groupId>  <!-- El mismo groupId del proyecto padre -->
+        <artifactId>easy-security</artifactId> <!-- El mismo artifactId del proyecto padre -->
+        <version>1.0.0-SNAPSHOT</version>  <!-- La misma versión que el proyecto padre -->
+    </parent>
+
+    <artifactId>easy-security-cors</artifactId> <!-- Este es el identificador único del subproyecto -->
+    <name>Easy Security CORS</name>
+    <description>Módulo de configuración de CORS para Easy Security</description>
+
+    <dependencies>
+        <!-- Core básico de Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- Seguridad básica de Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- Web Starter, necesario si vas a exponer API REST y configurar CORS en los controladores -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- AOP para aplicar CORS dinámicamente usando Aspectos -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!-- Validación de Spring Boot, útil para validaciones de configuraciones CORS -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
