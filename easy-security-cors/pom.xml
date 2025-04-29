@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-        <groupId>dev.easysecurity</groupId>  <!-- El mismo groupId del proyecto padre -->
-        <artifactId>easy-security</artifactId> <!-- El mismo artifactId del proyecto padre -->
-        <version>1.0.0-SNAPSHOT</version>  <!-- La misma versión que el proyecto padre -->
+        <groupId>dev.easysecurity</groupId>
+        <artifactId>easy-security</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>easy-security-cors</artifactId> <!-- Este es el identificador único del subproyecto -->
